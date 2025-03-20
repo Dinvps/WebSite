@@ -1,6 +1,6 @@
-/*******************************
+/********************************
  * RESET E FONTE
- *******************************/
+ ********************************/
  * {
   margin: 0;
   padding: 0;
@@ -9,24 +9,25 @@
 
 html, body {
   font-family: "Poppins", sans-serif;
-  background-color: #000; /* Fundo preto */
+  background-color: #000;
   color: #fff;
+  /* Removemos scroll-behavior: smooth para evitar rolagem sutil */
 }
 
-/*******************************
+/********************************
  * CONTAINER
- *******************************/
+ ********************************/
 .container {
   width: 85%;
   max-width: 1200px;
   margin: 0 auto;
 }
 
-/*******************************
- * HEADER FIXO
- *******************************/
+/********************************
+ * HEADER (sticky)
+ ********************************/
 .header {
-  position: sticky; /* para não "pular" ao carregar */
+  position: sticky;
   top: 0;
   background-color: #000;
   z-index: 999;
@@ -63,21 +64,22 @@ html, body {
   color: #0b6ec6;
 }
 
-/*******************************
- * HERO ESTILO "APPLE"
- *******************************/
+/********************************
+ * SEÇÃO HERO
+ ********************************/
 .hero {
-  padding: 6rem 0 4rem; /* Espaço extra no topo */
+  padding: 4rem 0 2rem;
   text-align: center;
   background: #000;
 }
 
 .hero-content {
   max-width: 800px;
+  margin: 0 auto;
 }
 
 .hero h1 {
-  font-size: 3rem;
+  font-size: 2.5rem;
   margin-bottom: 1rem;
   font-weight: 600;
 }
@@ -89,46 +91,20 @@ html, body {
   color: #ccc;
 }
 
-.cta-buttons {
-  display: flex;
-  gap: 1rem;
-  justify-content: center;
-  flex-wrap: wrap;
+/********************************
+ * BORDAS EM SEÇÕES
+ ********************************/
+.sobre,
+.servicos,
+.contato,
+.redes-sociais {
+  border-top: 1px solid #333; /* Linha para delimitar a seção */
+  padding: 4rem 0;
 }
 
-.btn-primary {
-  background-color: #0b6ec6;
-  color: #fff;
-  padding: 0.8rem 1.5rem;
-  border-radius: 24px;
-  text-decoration: none;
-  font-weight: 600;
-  transition: background 0.3s;
-}
-
-.btn-primary:hover {
-  background-color: #0d83eb;
-}
-
-.btn-link {
-  color: #0b6ec6;
-  background: transparent;
-  border: 2px solid #0b6ec6;
-  padding: 0.8rem 1.5rem;
-  border-radius: 24px;
-  text-decoration: none;
-  font-weight: 600;
-  transition: background 0.3s, color 0.3s;
-}
-
-.btn-link:hover {
-  background: #0b6ec6;
-  color: #fff;
-}
-
-/*******************************
+/********************************
  * TÍTULOS E DESCRIÇÕES
- *******************************/
+ ********************************/
 h2 {
   font-size: 2rem;
   margin-bottom: 1.5rem;
@@ -145,14 +121,9 @@ h2 {
   color: #ccc;
 }
 
-/*******************************
+/********************************
  * SEÇÃO SOBRE
- *******************************/
-.sobre {
-  background-color: #111;
-  padding: 4rem 0;
-}
-
+ ********************************/
 .sobre .container {
   display: flex;
   flex-direction: column;
@@ -160,15 +131,10 @@ h2 {
   text-align: center;
 }
 
-/*******************************
+/********************************
  * SEÇÃO SERVIÇOS
- *******************************/
-.servicos {
-  background-color: #000;
-  padding: 4rem 0;
-}
-
-.cards {
+ ********************************/
+.servicos .cards {
   display: flex;
   flex-wrap: wrap;
   gap: 2rem;
@@ -188,7 +154,7 @@ h2 {
 .card h3 {
   margin-bottom: 1rem;
   color: #0b6ec6;
-  font-size: 1.4rem;
+  font-size: 1.3rem;
 }
 
 .card p {
@@ -196,23 +162,9 @@ h2 {
   line-height: 1.5;
 }
 
-/*******************************
- * SEÇÃO CONTATO
- *******************************/
-.contato {
-  background-color: #111;
-  padding: 4rem 0;
-  text-align: center;
-}
-
-.contact-links {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-  justify-content: center;
-  margin-top: 2rem;
-}
-
+/********************************
+ * BOTÕES GERAIS
+ ********************************/
 .btn-secondary {
   background-color: #0b6ec6;
   color: #fff;
@@ -221,21 +173,22 @@ h2 {
   text-decoration: none;
   font-weight: 600;
   transition: background 0.3s;
+  display: inline-block;
 }
 
 .btn-secondary:hover {
   background-color: #0d83eb;
 }
 
-/*******************************
- * SEÇÃO REDES SOCIAIS
- *******************************/
+/********************************
+ * CONTATO E REDES SOCIAIS
+ ********************************/
+.contato,
 .redes-sociais {
-  background-color: #000;
-  padding: 4rem 0;
   text-align: center;
 }
 
+.contact-links,
 .social-links {
   display: flex;
   flex-wrap: wrap;
@@ -244,10 +197,11 @@ h2 {
   margin-top: 2rem;
 }
 
-/*******************************
+/********************************
  * RODAPÉ
- *******************************/
+ ********************************/
 footer {
+  border-top: 1px solid #333;
   background-color: #000;
   color: #fff;
   text-align: center;
@@ -255,9 +209,9 @@ footer {
   font-size: 0.9rem;
 }
 
-/*******************************
+/********************************
  * RESPONSIVIDADE
- *******************************/
+ ********************************/
 @media (max-width: 768px) {
   .header-content {
     flex-direction: column;
@@ -268,7 +222,8 @@ footer {
     font-size: 2rem;
   }
 
-  .btn-link, .btn-primary, .btn-secondary {
-    padding: 0.6rem 1.2rem;
+  .card {
+    width: 100%;
+    max-width: 400px;
   }
 }

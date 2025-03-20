@@ -4,24 +4,26 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Dr. Vitor Panizzon Spanholo</title>
-  <!-- Google Fonts (Poppins) -->
+  <!-- Fonte Google (Poppins) -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link 
     href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" 
     rel="stylesheet"
   />
-  <!-- CSS Externo -->
+  <!-- Arquivo CSS externo -->
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <!-- NAV SUPERIOR FIXO -->
+  <!-- NAV SUPERIOR (sticky para não pular ao carregar) -->
   <header class="header">
     <div class="container header-content">
       <div class="logo">Dr. Vitor P. S.</div>
       <nav>
         <ul>
+          <!-- Se quiser uma âncora para voltar ao topo, use #hero -->
+          <li><a href="#">Início</a></li>
           <li><a href="#sobre">Sobre</a></li>
           <li><a href="#servicos">Serviços</a></li>
           <li><a href="#contato">Contato</a></li>
@@ -31,39 +33,36 @@
     </div>
   </header>
 
-  <!-- HERO COM ESTILO "APPLE" -->
-  <section class="hero">
+  <!-- SEÇÃO HERO (sem altura forçada) -->
+  <section class="hero" id="hero">
     <div class="container hero-content">
-      <h1>Eleve Sua Saúde a Outro Nível</h1>
+      <h1>Eleve Sua Saúde e Performance</h1>
       <p class="subtitle">
         Emagrecimento • Reposição de Testosterona • Otimização Esportiva
       </p>
-      <div class="cta-buttons">
-        <a href="#servicos" class="btn-primary">Conheça os Serviços</a>
-        <a href="#sobre" class="btn-link">Saiba Mais</a>
-      </div>
+      <!-- Removido link que força scroll para evitar problemas -->
     </div>
   </section>
 
-  <!-- SEÇÃO SOBRE -->
+  <!-- SEÇÃO SOBRE (com borda superior) -->
   <section class="sobre" id="sobre">
     <div class="container">
       <h2>Sobre Mim</h2>
       <p class="descricao">
         Sou médico especializado em protocolos avançados de emagrecimento, 
-        reposição de testosterona e melhora esportiva. Busco sempre oferecer 
-        uma experiência personalizada e de alta qualidade, alinhada às melhores 
-        práticas e evidências científicas.  
+        reposição de testosterona e melhora esportiva. Ofereço uma experiência 
+        personalizada e de alta qualidade, alinhada às melhores práticas e 
+        evidências científicas.
       </p>
       <p class="descricao">
         Em constante aprimoramento, estou em preparação para o 
-        <strong>USMLE (United States Medical Licensing Examination)</strong>, 
-        reforçando meu compromisso com a excelência na prática médica.
+        <strong>USMLE</strong>, reforçando meu compromisso com a excelência 
+        na prática médica.
       </p>
     </div>
   </section>
 
-  <!-- SEÇÃO SERVIÇOS -->
+  <!-- SEÇÃO SERVIÇOS (com borda superior) -->
   <section class="servicos" id="servicos">
     <div class="container">
       <h2>Serviços</h2>
@@ -93,7 +92,7 @@
     </div>
   </section>
 
-  <!-- SEÇÃO CONTATO -->
+  <!-- SEÇÃO CONTATO (com borda superior) -->
   <section class="contato" id="contato">
     <div class="container">
       <h2>Contato</h2>
@@ -101,6 +100,7 @@
         Agende sua consulta ou tire dúvidas diretamente comigo:
       </p>
       <div class="contact-links">
+        <!-- Número atualizado: 5554999590944 -->
         <a 
           href="https://wa.me/5554999590944" 
           target="_blank" 
@@ -121,7 +121,7 @@
     </div>
   </section>
 
-  <!-- SEÇÃO REDES SOCIAIS -->
+  <!-- SEÇÃO REDES SOCIAIS (com borda superior) -->
   <section class="redes-sociais" id="redes-sociais">
     <div class="container">
       <h2>Redes Sociais</h2>
@@ -149,7 +149,7 @@
     </div>
   </section>
 
-  <!-- RODAPÉ -->
+  <!-- RODAPÉ (com borda superior) -->
   <footer>
     <p>&copy; 2025 Dr. Vitor Panizzon Spanholo. Todos os direitos reservados.</p>
   </footer>

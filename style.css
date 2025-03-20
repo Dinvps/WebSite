@@ -15,37 +15,12 @@ html, body {
 }
 
 /****************************
- * CONTAINERS E UTILITÁRIOS
+ * CONTAINER
  ****************************/
 .container {
   width: 90%;
   max-width: 1200px;
   margin: 0 auto;
-}
-
-/****************************
- * BARRA SUPERIOR (TOPBAR)
- ****************************/
-.topbar {
-  background-color: #111;
-  color: #fff;
-  font-size: 0.9rem;
-}
-
-.topbar .container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0.5rem 0;
-}
-
-.topbar a {
-  color: #0b6ec6; /* Azul destaque */
-  text-decoration: none;
-}
-
-.topbar a:hover {
-  text-decoration: underline;
 }
 
 /****************************
@@ -100,11 +75,7 @@ html, body {
   height: 90vh;
   padding: 0 2rem;
   background: linear-gradient(to right, #000000, #0b6ec6);
-  /* Se quiser usar imagem de fundo:
-     background: url('imagem.jpg') center/cover no-repeat;
-     e talvez um overlay com ::before
-  */
-  margin-top: 80px; /* para compensar o header fixo */
+  margin-top: 80px; /* Compensa o header fixo */
   text-align: center;
 }
 
@@ -249,6 +220,29 @@ html, body {
 }
 
 /****************************
+ * SEÇÃO REDES SOCIAIS
+ ****************************/
+.redes-sociais {
+  background-color: #000000;
+  padding: 4rem 0;
+  text-align: center;
+}
+
+.redes-sociais h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #0b6ec6;
+}
+
+.social-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+/****************************
  * RODAPÉ
  ****************************/
 footer {
@@ -267,20 +261,13 @@ footer {
     flex-direction: column;
     gap: 1rem;
   }
-
   .hero h1 {
     font-size: 2rem;
   }
-
   .sobre-flex {
     flex-direction: column;
     text-align: center;
   }
-
-  .sobre-img img {
-    max-width: 100%;
-  }
-
   .cards {
     flex-direction: column;
     align-items: center;

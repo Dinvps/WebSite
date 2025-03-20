@@ -1,19 +1,117 @@
-body {
-    font-family: Arial, sans-serif;
+/* RESET */
+* {
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    box-sizing: border-box;
+  }
+  
+  /* BODY */
+  body {
+    font-family: Arial, sans-serif;
     color: #333;
-}
-
-header, footer {
-    background-color: #333;
+    line-height: 1.6;
+  }
+  
+  /* NAVIGATION */
+  nav {
+    background: #333;
     color: #fff;
-    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+  }
+  nav .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+  }
+  nav li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s ease;
+  }
+  nav li a:hover {
+    color: #ddd;
+  }
+  
+  /* HERO SECTION */
+  .hero {
+    background: url('https://via.placeholder.com/1200x600') center/cover no-repeat;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
     text-align: center;
-}
-
-main {
-    padding: 2em;
+    padding: 0 2rem;
+  }
+  .hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+  }
+  .hero p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin-bottom: 1.5rem;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+  }
+  .hero a {
+    background: #ff6347;
+    color: #fff;
+    padding: 0.8rem 1.5rem;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: background 0.2s ease;
+  }
+  .hero a:hover {
+    background: #ff8367;
+  }
+  
+  /* MAIN CONTENT */
+  main {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  main h2 {
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
     text-align: center;
-}
+  }
+  main p {
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  
+  /* FOOTER */
+  footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 2rem;
+  }
+  footer p {
+    font-size: 0.9rem;
+  }
+  
+  /* RESPONSIVE DESIGN */
+  @media (max-width: 768px) {
+    nav ul {
+      display: none; /* Hides nav links on smaller screens (basic mobile view) */
+    }
+    .hero h1 {
+      font-size: 2rem;
+    }
+    .hero p {
+      font-size: 1rem;
+    }
+  }  

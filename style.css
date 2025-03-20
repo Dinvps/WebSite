@@ -11,7 +11,7 @@ html, body {
   font-family: "Poppins", sans-serif;
   background-color: #000;
   color: #fff;
-  /* Removemos scroll-behavior: smooth para evitar rolagem sutil */
+  /* Nenhuma scroll-behavior para evitar rolagem automática */
 }
 
 /********************************
@@ -65,7 +65,7 @@ html, body {
 }
 
 /********************************
- * SEÇÃO HERO
+ * HERO
  ********************************/
 .hero {
   padding: 4rem 0 2rem;
@@ -98,7 +98,7 @@ html, body {
 .servicos,
 .contato,
 .redes-sociais {
-  border-top: 1px solid #333; /* Linha para delimitar a seção */
+  border-top: 1px solid #333;
   padding: 4rem 0;
 }
 
@@ -119,16 +119,6 @@ h2 {
   max-width: 800px;
   margin: 0.5rem auto 1.5rem;
   color: #ccc;
-}
-
-/********************************
- * SEÇÃO SOBRE
- ********************************/
-.sobre .container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
 }
 
 /********************************

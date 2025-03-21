@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   // Animação de elementos
-  const animateElements = document.querySelectorAll('.service-card, .text-section, .contact-section');
+  const animateElements = document.querySelectorAll('.service-card, .text-section, .contact-section, .social-section');
   
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {

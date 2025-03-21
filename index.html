@@ -3,156 +3,136 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Dr. Vitor Panizzon Spanholo</title>
-  <!-- Fonte Google (Poppins) -->
+  <title>Promethya</title>
+  <!-- Fonte Google: Poppins -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link 
     href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" 
     rel="stylesheet"
   />
-  <!-- Arquivo CSS externo -->
+  <!-- CSS Externo -->
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-
-  <!-- NAV SUPERIOR (sticky para não pular ao carregar) -->
+  <!-- CABEÇALHO -->
   <header class="header">
     <div class="container header-content">
-      <div class="logo">Dr. Vitor P. S.</div>
+      <div class="logo">Promethya</div>
       <nav>
         <ul>
-          <!-- Se quiser uma âncora para voltar ao topo, use #hero -->
-          <li><a href="#">Início</a></li>
           <li><a href="#sobre">Sobre</a></li>
-          <li><a href="#servicos">Serviços</a></li>
+          <li><a href="#vida-anterior">Vida Anterior</a></li>
+          <li><a href="#promethya">Promethya</a></li>
+          <li><a href="#empresas">Empresas</a></li>
           <li><a href="#contato">Contato</a></li>
-          <li><a href="#redes-sociais">Redes Sociais</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
-  <!-- SEÇÃO HERO (sem altura forçada) -->
-  <section class="hero" id="hero">
+  <!-- SEÇÃO HERO -->
+  <section class="hero fade-up" id="inicio">
     <div class="container hero-content">
-      <h1>Eleve Sua Saúde e Performance</h1>
-      <p class="subtitle">
-        Emagrecimento • Reposição de Testosterona • Otimização Esportiva
+      <h1 class="hero-title">Promethya</h1>
+      <p class="hero-subtitle">
+        Inovação para a Transformação – Inspirado pelo espírito de Prometeu, eu trago soluções transformadoras
+        em <strong>emagrecimento</strong>, <strong>reposição hormonal</strong> e <strong>otimização de performance esportiva</strong>.
       </p>
-      <!-- Removido link que força scroll para evitar problemas -->
+      <a href="#contato" class="btn-primary hero-cta">Fale Comigo</a>
     </div>
   </section>
 
-  <!-- SEÇÃO SOBRE (com borda superior) -->
-  <section class="sobre" id="sobre">
-    <div class="container">
-      <h2>Sobre Mim</h2>
-      <p class="descricao">
-        Sou médico especializado em protocolos avançados de emagrecimento, 
-        reposição de testosterona e melhora esportiva. Ofereço uma experiência 
-        personalizada e de alta qualidade, alinhada às melhores práticas e 
-        evidências científicas.
-      </p>
-      <p class="descricao">
-        Em constante aprimoramento, estou em preparação para o 
-        <strong>USMLE</strong>, reforçando meu compromisso com a excelência 
-        na prática médica.
+  <!-- SEÇÃO SOBRE -->
+  <section class="section fade-left" id="sobre">
+    <div class="container section-content">
+      <h2>Sobre</h2>
+      <p>
+        Olá! Sou o <strong>Dr. Vitor Panizzon Spanholo</strong> e atuo de forma individual na Promethya, 
+        uma marca que une inovação, conhecimento científico e paixão pela saúde. 
+        Assim como Prometeu trouxe o fogo à humanidade, trago perspectivas transformadoras para sua vida.
       </p>
     </div>
   </section>
 
-  <!-- SEÇÃO SERVIÇOS (com borda superior) -->
-  <section class="servicos" id="servicos">
-    <div class="container">
-      <h2>Serviços</h2>
+  <!-- SEÇÃO VIDA ANTERIOR -->
+  <section class="section fade-right" id="vida-anterior">
+    <div class="container section-content">
+      <h2>Vida Anterior</h2>
+      <p>
+        Antes de fundar a Promethya, minha trajetória na medicina e no estudo científico me permitiu construir uma sólida base
+        para compreender os desafios da saúde. Essa jornada me inspirou a buscar soluções inovadoras que hoje se transformam 
+        em estratégias personalizadas para emagrecimento, reposição hormonal e performance esportiva.
+      </p>
+    </div>
+  </section>
+
+  <!-- SEÇÃO PROMETHYA -->
+  <section class="section fade-up" id="promethya">
+    <div class="container section-content">
+      <h2>Promethya</h2>
+      <p>
+        A Promethya é a materialização da minha visão: unir ciência e inovação para transformar vidas. Aqui, você encontrará 
+        conteúdos exclusivos, dicas práticas e estratégias baseadas nas melhores evidências científicas para alcançar resultados 
+        duradouros na saúde e na performance.
+      </p>
+      <!-- Espaço para inserir eventualmente conteúdo dinâmico ou destaques -->
+    </div>
+  </section>
+
+  <!-- SEÇÃO EMPRESAS (SERVIÇOS) -->
+  <section class="section fade-left" id="empresas">
+    <div class="container section-content">
+      <h2>Empresas</h2>
+      <p>
+        Em minhas consultorias e projetos, aplico métodos comprovados para transformar resultados. Ofereço:
+      </p>
       <div class="cards">
         <div class="card">
           <h3>Emagrecimento</h3>
           <p>
-            Acompanhamento clínico para perda de peso saudável e sustentada, 
-            unindo nutrição, exercícios e suporte médico contínuo.
+            Abordagem clínica e individualizada para perda de peso saudável e duradoura, aliando nutrição, exercício 
+            e acompanhamento médico contínuo.
           </p>
         </div>
         <div class="card">
           <h3>Reposição Hormonal</h3>
           <p>
-            Protocolos individualizados de reposição de testosterona, 
-            visando equilíbrio, vitalidade e bem-estar.
+            Protocolos personalizados para equilibrar níveis hormonais, melhorando energia, vitalidade e bem-estar de forma segura.
           </p>
         </div>
         <div class="card">
-          <h3>Performance Esportiva</h3>
+          <h3>Otimização Esportiva</h3>
           <p>
-            Orientação médica para atletas ou entusiastas que desejam 
-            otimizar desempenho, prevenir lesões e maximizar resultados.
+            Orientação médica para atletas e entusiastas, aprimorando desempenho físico, prevenindo lesões e maximizando resultados.
           </p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- SEÇÃO CONTATO (com borda superior) -->
-  <section class="contato" id="contato">
-    <div class="container">
+  <!-- SEÇÃO CONTATO -->
+  <section class="section fade-right" id="contato">
+    <div class="container section-content">
       <h2>Contato</h2>
-      <p class="descricao">
-        Agende sua consulta ou tire dúvidas diretamente comigo:
+      <p>
+        Quer agendar uma consulta ou saber mais sobre as soluções da Promethya? Entre em contato agora mesmo!
       </p>
       <div class="contact-links">
-        <!-- Número atualizado: 5554999590944 -->
-        <a 
-          href="https://wa.me/5554999590944" 
-          target="_blank" 
-          rel="noopener noreferrer" 
-          class="btn-secondary"
-        >
-          WhatsApp
-        </a>
-        <a 
-          href="mailto:vitorpanizzon@gmail.com" 
-          target="_blank" 
-          rel="noopener noreferrer" 
-          class="btn-secondary"
-        >
-          E-mail
-        </a>
+        <a href="https://wa.me/5554999590944" target="_blank" class="btn-secondary">WhatsApp</a>
+        <a href="mailto:vitorpanizzon@gmail.com" target="_blank" class="btn-secondary">E-mail</a>
       </div>
     </div>
   </section>
 
-  <!-- SEÇÃO REDES SOCIAIS (com borda superior) -->
-  <section class="redes-sociais" id="redes-sociais">
-    <div class="container">
-      <h2>Redes Sociais</h2>
-      <p class="descricao">
-        Acompanhe conteúdos exclusivos, dicas de saúde e muito mais:
-      </p>
-      <div class="social-links">
-        <a 
-          href="https://youtube.com/@vitorpzsp" 
-          target="_blank" 
-          rel="noopener noreferrer" 
-          class="btn-secondary"
-        >
-          YouTube
-        </a>
-        <a 
-          href="https://instagram.com/vitorpzsp" 
-          target="_blank" 
-          rel="noopener noreferrer" 
-          class="btn-secondary"
-        >
-          Instagram
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- RODAPÉ (com borda superior) -->
+  <!-- RODAPÉ -->
   <footer>
-    <p>&copy; 2025 Dr. Vitor Panizzon Spanholo. Todos os direitos reservados.</p>
+    <div class="container">
+      <p>&copy; 2025 Promethya. Todos os direitos reservados. Fundada pelo Dr. Vitor Panizzon Spanholo.</p>
+    </div>
   </footer>
 
+  <!-- SCRIPT -->
+  <script src="script.js"></script>
 </body>
 </html>

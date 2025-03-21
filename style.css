@@ -1,17 +1,16 @@
 /********************************
- * RESET E FONTE
+ * RESET & FONT
  ********************************/
  * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
 html, body {
   font-family: "Poppins", sans-serif;
   background-color: #000;
   color: #fff;
-  /* Removemos scroll-behavior: smooth para evitar rolagem sutil */
+  scroll-behavior: smooth;
 }
 
 /********************************
@@ -24,148 +23,69 @@ html, body {
 }
 
 /********************************
- * HEADER (sticky)
+ * HEADER
  ********************************/
 .header {
   position: sticky;
   top: 0;
   background-color: #000;
-  z-index: 999;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+  z-index: 1000;
+  padding: 1rem 0;
+  border-bottom: 1px solid #333;
 }
-
 .header-content {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 0;
 }
-
 .logo {
+  font-size: 1.8rem;
   font-weight: 600;
-  font-size: 1.5rem;
   color: #0b6ec6;
 }
-
-.header-content ul {
-  list-style: none;
+.header nav ul {
   display: flex;
-  gap: 1.5rem;
+  gap: 2rem;
+  list-style: none;
 }
-
-.header-content li a {
+.header nav ul li a {
   color: #fff;
   text-decoration: none;
   font-weight: 300;
-  transition: color 0.2s;
+  transition: color 0.3s;
 }
-
-.header-content li a:hover {
+.header nav ul li a:hover {
   color: #0b6ec6;
 }
 
 /********************************
- * SEÇÃO HERO
+ * HERO SECTION
  ********************************/
 .hero {
-  padding: 4rem 0 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
   text-align: center;
   background: #000;
+  position: relative;
+  overflow: hidden;
 }
-
 .hero-content {
+  z-index: 1;
   max-width: 800px;
-  margin: 0 auto;
 }
-
-.hero h1 {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
+.hero-title {
+  font-size: 4rem;
   font-weight: 600;
-}
-
-.subtitle {
-  font-size: 1.2rem;
-  margin-bottom: 2rem;
-  font-weight: 300;
-  color: #ccc;
-}
-
-/********************************
- * BORDAS EM SEÇÕES
- ********************************/
-.sobre,
-.servicos,
-.contato,
-.redes-sociais {
-  border-top: 1px solid #333; /* Linha para delimitar a seção */
-  padding: 4rem 0;
-}
-
-/********************************
- * TÍTULOS E DESCRIÇÕES
- ********************************/
-h2 {
-  font-size: 2rem;
-  margin-bottom: 1.5rem;
-  color: #0b6ec6;
-  text-align: center;
-}
-
-.descricao {
-  font-size: 1.1rem;
-  line-height: 1.6;
-  text-align: center;
-  max-width: 800px;
-  margin: 0.5rem auto 1.5rem;
-  color: #ccc;
-}
-
-/********************************
- * SEÇÃO SOBRE
- ********************************/
-.sobre .container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
-
-/********************************
- * SEÇÃO SERVIÇOS
- ********************************/
-.servicos .cards {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2rem;
-  justify-content: center;
-  margin-top: 2rem;
-}
-
-.card {
-  background-color: #111;
-  padding: 2rem;
-  border-radius: 8px;
-  width: 280px;
-  text-align: left;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
-}
-
-.card h3 {
   margin-bottom: 1rem;
-  color: #0b6ec6;
-  font-size: 1.3rem;
 }
-
-.card p {
-  font-weight: 300;
-  line-height: 1.5;
+.hero-subtitle {
+  font-size: 1.4rem;
+  margin-bottom: 2rem;
+  color: #ccc;
 }
-
-/********************************
- * BOTÕES GERAIS
- ********************************/
-.btn-secondary {
+.btn-primary {
   background-color: #0b6ec6;
   color: #fff;
   padding: 0.8rem 1.5rem;
@@ -173,57 +93,127 @@ h2 {
   text-decoration: none;
   font-weight: 600;
   transition: background 0.3s;
-  display: inline-block;
+}
+.btn-primary:hover {
+  background-color: #0d83eb;
 }
 
+/********************************
+ * SECTION BASE STYLING
+ ********************************/
+.section {
+  padding: 6rem 0;
+  text-align: center;
+  border-top: 1px solid #333;
+}
+.section-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+.section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  color: #0b6ec6;
+}
+.section p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #ccc;
+}
+
+/********************************
+ * ARTICLE CARDS
+ ********************************/
+.article-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  margin-top: 3rem;
+}
+.article-card {
+  background-color: #111;
+  padding: 2rem;
+  border-radius: 8px;
+  width: 280px;
+  text-align: left;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+}
+.article-card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  color: #0b6ec6;
+}
+.article-card p {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #ccc;
+  margin-bottom: 1rem;
+}
+.btn-secondary {
+  background-color: #0b6ec6;
+  color: #fff;
+  padding: 0.6rem 1.2rem;
+  border-radius: 24px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.3s;
+}
 .btn-secondary:hover {
   background-color: #0d83eb;
 }
 
 /********************************
- * CONTATO E REDES SOCIAIS
- ********************************/
-.contato,
-.redes-sociais {
-  text-align: center;
-}
-
-.contact-links,
-.social-links {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-  justify-content: center;
-  margin-top: 2rem;
-}
-
-/********************************
- * RODAPÉ
+ * FOOTER
  ********************************/
 footer {
-  border-top: 1px solid #333;
-  background-color: #000;
-  color: #fff;
+  padding: 2rem 0;
   text-align: center;
-  padding: 2rem 1rem;
+  border-top: 1px solid #333;
+  margin-top: 3rem;
+}
+footer p {
   font-size: 0.9rem;
+  color: #aaa;
 }
 
 /********************************
- * RESPONSIVIDADE
+ * FADE-IN ANIMATIONS
+ ********************************/
+.fade-up, .fade-left, .fade-right {
+  opacity: 0;
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+.fade-up {
+  transform: translateY(20px);
+}
+.fade-left {
+  transform: translateX(-20px);
+}
+.fade-right {
+  transform: translateX(20px);
+}
+.appear {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+/********************************
+ * RESPONSIVE STYLES
  ********************************/
 @media (max-width: 768px) {
   .header-content {
     flex-direction: column;
     gap: 1rem;
   }
-
-  .hero h1 {
+  .hero-title {
+    font-size: 2.8rem;
+  }
+  .section h2 {
     font-size: 2rem;
   }
-
-  .card {
+  .article-card {
     width: 100%;
-    max-width: 400px;
+    max-width: 350px;
   }
 }

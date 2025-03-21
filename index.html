@@ -4,135 +4,99 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Promethya</title>
-  <!-- Fonte Google: Poppins -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link 
-    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" 
-    rel="stylesheet"
-  />
-  <!-- CSS Externo -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <!-- CABEÇALHO -->
   <header class="header">
-    <div class="container header-content">
+    <nav class="container header-content">
+      <ul class="header-left">
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#servicos">Serviços</a></li>
+      </ul>
       <div class="logo">Promethya</div>
-      <nav>
-        <ul>
-          <li><a href="#sobre">Sobre</a></li>
-          <li><a href="#vida-anterior">Vida Anterior</a></li>
-          <li><a href="#promethya">Promethya</a></li>
-          <li><a href="#empresas">Empresas</a></li>
-          <li><a href="#contato">Contato</a></li>
-        </ul>
-      </nav>
-    </div>
+      <ul class="header-right">
+        <li><a href="#contato">Contato</a></li>
+        <li><a href="#redes-sociais">Redes</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <!-- SEÇÃO HERO -->
-  <section class="hero fade-up" id="inicio">
-    <div class="container hero-content">
-      <h1 class="hero-title">Promethya</h1>
-      <p class="hero-subtitle">
-        Inovação para a Transformação – Inspirado pelo espírito de Prometeu, eu trago soluções transformadoras
-        em <strong>emagrecimento</strong>, <strong>reposição hormonal</strong> e <strong>otimização de performance esportiva</strong>.
-      </p>
-      <a href="#contato" class="btn-primary hero-cta">Fale Comigo</a>
-    </div>
-  </section>
+  <!-- SEÇÃO INÍCIO -->
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-content">
+        <h1 class="hero-title">
+          <span class="gradient-text">Inovação</span> para<br>
+          Sua Transformação
+        </h1>
+        <div class="scroll-indicator"></div>
+      </div>
+    </section>
 
-  <!-- SEÇÃO SOBRE -->
-  <section class="section fade-left" id="sobre">
-    <div class="container section-content">
-      <h2>Sobre</h2>
-      <p>
-        Olá! Sou o <strong>Dr. Vitor Panizzon Spanholo</strong> e atuo de forma individual na Promethya, 
-        uma marca que une inovação, conhecimento científico e paixão pela saúde. 
-        Assim como Prometeu trouxe o fogo à humanidade, trago perspectivas transformadoras para sua vida.
-      </p>
-    </div>
-  </section>
+    <!-- SEÇÃO SOBRE (mantido conteúdo, alterada estrutura) -->
+    <section class="text-section" id="sobre">
+      <div class="container">
+        <h2 class="section-title">Dr. Vitor Panizzon Spanholo</h2>
+        <p class="section-text">
+          Fundador da Promethya, trago uma abordagem revolucionária em saúde e performance humana. 
+          Combinando conhecimento médico avançado com tecnologia de ponta, ofereço soluções 
+          personalizadas para transformação física e mental.
+        </p>
+      </div>
+    </section>
 
-  <!-- SEÇÃO VIDA ANTERIOR -->
-  <section class="section fade-right" id="vida-anterior">
-    <div class="container section-content">
-      <h2>Vida Anterior</h2>
-      <p>
-        Antes de fundar a Promethya, minha trajetória na medicina e no estudo científico me permitiu construir uma sólida base
-        para compreender os desafios da saúde. Essa jornada me inspirou a buscar soluções inovadoras que hoje se transformam 
-        em estratégias personalizadas para emagrecimento, reposição hormonal e performance esportiva.
-      </p>
-    </div>
-  </section>
-
-  <!-- SEÇÃO PROMETHYA -->
-  <section class="section fade-up" id="promethya">
-    <div class="container section-content">
-      <h2>Promethya</h2>
-      <p>
-        A Promethya é a materialização da minha visão: unir ciência e inovação para transformar vidas. Aqui, você encontrará 
-        conteúdos exclusivos, dicas práticas e estratégias baseadas nas melhores evidências científicas para alcançar resultados 
-        duradouros na saúde e na performance.
-      </p>
-      <!-- Espaço para inserir eventualmente conteúdo dinâmico ou destaques -->
-    </div>
-  </section>
-
-  <!-- SEÇÃO EMPRESAS (SERVIÇOS) -->
-  <section class="section fade-left" id="empresas">
-    <div class="container section-content">
-      <h2>Empresas</h2>
-      <p>
-        Em minhas consultorias e projetos, aplico métodos comprovados para transformar resultados. Ofereço:
-      </p>
-      <div class="cards">
-        <div class="card">
-          <h3>Emagrecimento</h3>
-          <p>
-            Abordagem clínica e individualizada para perda de peso saudável e duradoura, aliando nutrição, exercício 
-            e acompanhamento médico contínuo.
-          </p>
-        </div>
-        <div class="card">
-          <h3>Reposição Hormonal</h3>
-          <p>
-            Protocolos personalizados para equilibrar níveis hormonais, melhorando energia, vitalidade e bem-estar de forma segura.
-          </p>
-        </div>
-        <div class="card">
-          <h3>Otimização Esportiva</h3>
-          <p>
-            Orientação médica para atletas e entusiastas, aprimorando desempenho físico, prevenindo lesões e maximizando resultados.
-          </p>
+    <!-- SEÇÃO SERVIÇOS (novo layout) -->
+    <section class="cards-section" id="servicos">
+      <div class="container">
+        <div class="services-grid">
+          <article class="service-card">
+            <h3>01</h3>
+            <h4>Emagrecimento</h4>
+            <p>Protocolos científicos para perda de peso sustentável e saúde metabólica.</p>
+          </article>
+          <article class="service-card">
+            <h3>02</h3>
+            <h4>Reposição Hormonal</h4>
+            <p>Equilíbrio hormonal personalizado para vitalidade e longevidade.</p>
+          </article>
+          <article class="service-card">
+            <h3>03</h3>
+            <h4>Otimização Esportiva</h4>
+            <p>Maximização de performance atlética com segurança e eficácia.</p>
+          </article>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- SEÇÃO CONTATO -->
-  <section class="section fade-right" id="contato">
-    <div class="container section-content">
-      <h2>Contato</h2>
-      <p>
-        Quer agendar uma consulta ou saber mais sobre as soluções da Promethya? Entre em contato agora mesmo!
-      </p>
-      <div class="contact-links">
-        <a href="https://wa.me/5554999590944" target="_blank" class="btn-secondary">WhatsApp</a>
-        <a href="mailto:vitorpanizzon@gmail.com" target="_blank" class="btn-secondary">E-mail</a>
+    <!-- SEÇÃO CONTATO (atualizado) -->
+    <section class="contact-section" id="contato">
+      <div class="container">
+        <div class="contact-content">
+          <h2 class="section-title">Transforme Sua Vida</h2>
+          <p class="section-text">Agende sua consulta para uma abordagem personalizada</p>
+          <div class="contact-buttons">
+            <a href="https://wa.me/5554999590944" class="button">
+              <span>Agendar por WhatsApp</span>
+            </a>
+            <a href="mailto:vitorpanizzon@gmail.com" class="button">
+              <span>Enviar E-mail</span>
+            </a>
+          </div>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
+  </main>
 
-  <!-- RODAPÉ -->
-  <footer>
+  <footer class="footer">
     <div class="container">
-      <p>&copy; 2025 Promethya. Todos os direitos reservados. Fundada pelo Dr. Vitor Panizzon Spanholo.</p>
+      <p>© 2025 Promethya. Todos os direitos reservados.</p>
     </div>
   </footer>
 
-  <!-- SCRIPT -->
   <script src="script.js"></script>
 </body>
 </html>

@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-  // Animação de scroll suave
+  // Scroll suave
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
       e.preventDefault();
@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // Animação de revelação
+  // Animação de elementos
   const animateElements = document.querySelectorAll('.service-card, .text-section, .contact-section');
   
   const observer = new IntersectionObserver((entries) => {
@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', () => {
     observer.observe(el);
   });
 
-  // Progresso de scroll
+  // Barra de progresso do scroll
   const scrollProgress = document.createElement('div');
   scrollProgress.style.cssText = `
     position: fixed;

@@ -6,107 +6,124 @@
   <title>Contabilizei - Conectando Empresas a Contadores</title>
   <!-- Link para o CSS externo -->
   <link rel="stylesheet" href="styles.css">
+  <!-- Fonte do Google para uma tipografia mais moderna -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <!-- Header -->
+  <!-- Header com Navbar -->
   <header class="header">
-    <nav class="container">
+    <nav class="container navbar">
       <div class="logo">Contabilizei</div>
+      <ul class="nav-links">
+        <li><a href="#">Sobre</a></li>
+        <li><a href="#">Planos</a></li>
+        <li><a href="#">Contato</a></li>
+      </ul>
     </nav>
   </header>
 
   <!-- Hero Section -->
   <section class="hero">
-    <div class="container">
+    <div class="container hero-content">
       <h1>Encontre o Contador Ideal para Sua Empresa</h1>
-      <p>Conectamos empreendedores a profissionais contábeis qualificados</p>
+      <p>Conectamos empreendedores a profissionais contábeis qualificados no Rio Grande do Sul.</p>
+      <a href="#busca" class="btn">Comece Agora</a>
     </div>
   </section>
 
-  <!-- Busca -->
-  <div class="container">
-    <div class="search-box">
-      <form class="search-form">
-        <input type="text" placeholder="Qual serviço você precisa? (ex: abertura de empresa, impostos)">
-        <select>
-          <option value="">Localização</option>
-          <option>Porto Alegre</option>
-          <option>Caxias do Sul</option>
-          <option>Canoas</option>
-          <option>Pelotas</option>
-          <option>Novo Hamburgo</option>
-          <option>Santa Maria</option>
-          <option>Sananduva</option>
-          <option>Tapejara</option>
-          <option>Ibiaça</option>
-          <option>Gentil</option>
-          <option>Erechim</option>
-        </select>
-        <select>
-          <option value="">Tipo de Serviço</option>
-          <option>Abertura de Empresa</option>
-          <option>Declaração de Impostos</option>
-          <option>Consultoria Financeira</option>
-        </select>
-        <button type="submit">Buscar</button>
-      </form>
+  <!-- Seção de Busca -->
+  <section id="busca" class="search-section">
+    <div class="container">
+      <div class="search-box">
+        <form class="search-form">
+          <input type="text" placeholder="Qual serviço você precisa? (ex: abertura de empresa, impostos)">
+          <select>
+            <option value="">Localização</option>
+            <option>Porto Alegre</option>
+            <option>Caxias do Sul</option>
+            <option>Canoas</option>
+            <option>Pelotas</option>
+            <option>Novo Hamburgo</option>
+            <option>Santa Maria</option>
+            <option>Sananduva</option>
+            <option>Tapejara</option>
+            <option>Ibiaça</option>
+            <option>Gentil</option>
+            <option>Erechim</option>
+          </select>
+          <select>
+            <option value="">Tipo de Serviço</option>
+            <option>Abertura de Empresa</option>
+            <option>Declaração de Impostos</option>
+            <option>Consultoria Financeira</option>
+          </select>
+          <button type="submit">Buscar</button>
+        </form>
+      </div>
     </div>
-  </div>
+  </section>
 
-  <!-- Listagem de Contadores -->
-  <main class="container">
-    <div class="contadores-grid">
-      <!-- Card 1 -->
-      <article class="contador-card">
-        <span class="badge">Verificado</span>
-        <h3>Dr. Carlos Silva</h3>
-        <p>CRC-SP 123.456</p>
-        <ul>
-          <li>📍 Porto Alegre - RS</li>
-          <li>💼 Especialista em MEI e Startups</li>
-        </ul>
-        <!-- Componente de Rating -->
-        <div class="rating" data-rating="0">
-          <span data-value="1">&#9734;</span>
-          <span data-value="2">&#9734;</span>
-          <span data-value="3">&#9734;</span>
-          <span data-value="4">&#9734;</span>
-          <span data-value="5">&#9734;</span>
-        </div>
-        <button>Fale com o Profissional</button>
-      </article>
+  <!-- Seção de Cards dos Contadores -->
+  <section class="cards-section">
+    <div class="container">
+      <div class="contadores-grid">
+        <!-- Card 1 -->
+        <article class="contador-card">
+          <div class="card-header">
+            <span class="badge">Verificado</span>
+            <h3>Dr. Carlos Silva</h3>
+          </div>
+          <p>CRC-SP 123.456</p>
+          <ul class="card-info">
+            <li>📍 Porto Alegre - RS</li>
+            <li>💼 Especialista em MEI e Startups</li>
+          </ul>
+          <!-- Componente de Rating -->
+          <div class="rating" data-rating="0">
+            <span data-value="1">&#9734;</span>
+            <span data-value="2">&#9734;</span>
+            <span data-value="3">&#9734;</span>
+            <span data-value="4">&#9734;</span>
+            <span data-value="5">&#9734;</span>
+          </div>
+          <button class="btn">Fale com o Profissional</button>
+        </article>
 
-      <!-- Card 2 -->
-      <article class="contador-card">
-        <span class="badge">Premium</span>
-        <h3>Contabilidade Digital Ltda</h3>
-        <p>CRC-RJ 789.012</p>
-        <ul>
-          <li>📍 Caxias do Sul - RS</li>
-          <li>💼 Consultoria para Grandes Empresas</li>
-        </ul>
-        <!-- Componente de Rating -->
-        <div class="rating" data-rating="0">
-          <span data-value="1">&#9734;</span>
-          <span data-value="2">&#9734;</span>
-          <span data-value="3">&#9734;</span>
-          <span data-value="4">&#9734;</span>
-          <span data-value="5">&#9734;</span>
-        </div>
-        <button>Fale com o Profissional</button>
-      </article>
+        <!-- Card 2 -->
+        <article class="contador-card">
+          <div class="card-header">
+            <span class="badge premium">Premium</span>
+            <h3>Contabilidade Digital Ltda</h3>
+          </div>
+          <p>CRC-RJ 789.012</p>
+          <ul class="card-info">
+            <li>📍 Caxias do Sul - RS</li>
+            <li>💼 Consultoria para Grandes Empresas</li>
+          </ul>
+          <!-- Componente de Rating -->
+          <div class="rating" data-rating="0">
+            <span data-value="1">&#9734;</span>
+            <span data-value="2">&#9734;</span>
+            <span data-value="3">&#9734;</span>
+            <span data-value="4">&#9734;</span>
+            <span data-value="5">&#9734;</span>
+          </div>
+          <button class="btn">Fale com o Profissional</button>
+        </article>
+      </div>
     </div>
-  </main>
+  </section>
 
   <!-- Footer -->
   <footer>
-    <div class="container">
+    <div class="container footer-content">
       <p>© 2024 Contabilizei - Todos os direitos reservados</p>
-      <nav>
-        <a href="#">Sobre Nós</a>
-        <a href="#">Como Funciona</a>
-        <a href="#">Contato</a>
-      </nav>
+      <ul class="footer-links">
+        <li><a href="#">Sobre Nós</a></li>
+        <li><a href="#">Como Funciona</a></li>
+        <li><a href="#">Contato</a></li>
+      </ul>
     </div>
   </footer>
 

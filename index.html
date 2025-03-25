@@ -1,94 +1,116 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contabilizei - Conectando Empresas a Contadores</title>
-    <!-- Link para o CSS externo -->
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contabilizei - Conectando Empresas a Contadores</title>
+  <!-- Link para o CSS externo -->
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Header -->
-    <header class="header">
-        <nav class="container">
-            <div class="logo">Contabilizei</div>
-        </nav>
-    </header>
+  <!-- Header -->
+  <header class="header">
+    <nav class="container">
+      <div class="logo">Contabilizei</div>
+    </nav>
+  </header>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="container">
-            <h1>Encontre o Contador Ideal para Sua Empresa</h1>
-            <p>Conectamos empreendedores a profissionais contábeis qualificados</p>
-        </div>
-    </section>
-
-    <!-- Busca -->
+  <!-- Hero Section -->
+  <section class="hero">
     <div class="container">
-        <div class="search-box">
-            <form class="search-form">
-                <input type="text" placeholder="Qual serviço você precisa? (ex: abertura de empresa, impostos)">
-                <select>
-                    <option value="">Localização</option>
-                    <option>São Paulo</option>
-                    <option>Rio de Janeiro</option>
-                    <option>Belo Horizonte</option>
-                </select>
-                <select>
-                    <option value="">Tipo de Serviço</option>
-                    <option>Abertura de Empresa</option>
-                    <option>Declaração de Impostos</option>
-                    <option>Consultoria Financeira</option>
-                </select>
-                <button type="submit">Buscar</button>
-            </form>
-        </div>
+      <h1>Encontre o Contador Ideal para Sua Empresa</h1>
+      <p>Conectamos empreendedores a profissionais contábeis qualificados</p>
     </div>
+  </section>
 
-    <!-- Listagem de Contadores -->
-    <main class="container">
-        <div class="contadores-grid">
-            <!-- Card 1 -->
-            <article class="contador-card">
-                <span class="badge">Verificado</span>
-                <h3>Dr. Carlos Silva</h3>
-                <p>CRC-SP 123.456</p>
-                <ul style="list-style: none; margin: 1rem 0;">
-                    <li>⭐ 4.9 (125 avaliações)</li>
-                    <li>📍 São Paulo - SP</li>
-                    <li>💼 Especialista em MEI e Startups</li>
-                </ul>
-                <button style="width: 100%;">Fale com o Profissional</button>
-            </article>
+  <!-- Busca -->
+  <div class="container">
+    <div class="search-box">
+      <form class="search-form">
+        <input type="text" placeholder="Qual serviço você precisa? (ex: abertura de empresa, impostos)">
+        <select>
+          <option value="">Localização</option>
+          <option>Porto Alegre</option>
+          <option>Caxias do Sul</option>
+          <option>Canoas</option>
+          <option>Pelotas</option>
+          <option>Novo Hamburgo</option>
+          <option>Santa Maria</option>
+          <option>Sananduva</option>
+          <option>Tapejara</option>
+          <option>Ibiaça</option>
+          <option>Gentil</option>
+          <option>Erechim</option>
+        </select>
+        <select>
+          <option value="">Tipo de Serviço</option>
+          <option>Abertura de Empresa</option>
+          <option>Declaração de Impostos</option>
+          <option>Consultoria Financeira</option>
+        </select>
+        <button type="submit">Buscar</button>
+      </form>
+    </div>
+  </div>
 
-            <!-- Card 2 -->
-            <article class="contador-card">
-                <span class="badge">Premium</span>
-                <h3>Contabilidade Digital Ltda</h3>
-                <p>CRC-RJ 789.012</p>
-                <ul style="list-style: none; margin: 1rem 0;">
-                    <li>⭐ 4.8 (89 avaliações)</li>
-                    <li>📍 Rio de Janeiro - RJ</li>
-                    <li>💼 Consultoria para Grandes Empresas</li>
-                </ul>
-                <button style="width: 100%;">Fale com o Profissional</button>
-            </article>
+  <!-- Listagem de Contadores -->
+  <main class="container">
+    <div class="contadores-grid">
+      <!-- Card 1 -->
+      <article class="contador-card">
+        <span class="badge">Verificado</span>
+        <h3>Dr. Carlos Silva</h3>
+        <p>CRC-SP 123.456</p>
+        <ul>
+          <li>📍 Porto Alegre - RS</li>
+          <li>💼 Especialista em MEI e Startups</li>
+        </ul>
+        <!-- Componente de Rating -->
+        <div class="rating" data-rating="0">
+          <span data-value="1">&#9734;</span>
+          <span data-value="2">&#9734;</span>
+          <span data-value="3">&#9734;</span>
+          <span data-value="4">&#9734;</span>
+          <span data-value="5">&#9734;</span>
         </div>
-    </main>
+        <button>Fale com o Profissional</button>
+      </article>
 
-    <!-- Footer -->
-    <footer>
-        <div class="container" style="text-align: center;">
-            <p>© 2024 Contabilizei - Todos os direitos reservados</p>
-            <nav style="margin-top: 1rem;">
-                <a href="#">Sobre Nós</a>
-                <a href="#">Como Funciona</a>
-                <a href="#">Contato</a>
-            </nav>
+      <!-- Card 2 -->
+      <article class="contador-card">
+        <span class="badge">Premium</span>
+        <h3>Contabilidade Digital Ltda</h3>
+        <p>CRC-RJ 789.012</p>
+        <ul>
+          <li>📍 Caxias do Sul - RS</li>
+          <li>💼 Consultoria para Grandes Empresas</li>
+        </ul>
+        <!-- Componente de Rating -->
+        <div class="rating" data-rating="0">
+          <span data-value="1">&#9734;</span>
+          <span data-value="2">&#9734;</span>
+          <span data-value="3">&#9734;</span>
+          <span data-value="4">&#9734;</span>
+          <span data-value="5">&#9734;</span>
         </div>
-    </footer>
+        <button>Fale com o Profissional</button>
+      </article>
+    </div>
+  </main>
 
-    <!-- Link para o JavaScript externo -->
-    <script src="scripts.js"></script>
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>© 2024 Contabilizei - Todos os direitos reservados</p>
+      <nav>
+        <a href="#">Sobre Nós</a>
+        <a href="#">Como Funciona</a>
+        <a href="#">Contato</a>
+      </nav>
+    </div>
+  </footer>
+
+  <!-- Link para o JavaScript externo -->
+  <script src="scripts.js"></script>
 </body>
 </html>

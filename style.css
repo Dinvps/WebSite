@@ -113,6 +113,22 @@ body {
   cursor: pointer;
 }
 
+/* Componente de Rating */
+.rating {
+  margin: 1rem 0;
+}
+
+.rating span {
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #ddd;
+  margin-right: 0.2rem;
+}
+
+.rating span.filled {
+  color: #f1c40f;
+}
+
 /* Footer */
 footer {
   background: #2d3436;
@@ -131,10 +147,10 @@ footer a {
 /* Responsividade */
 @media (max-width: 768px) {
   .search-form {
-      grid-template-columns: 1fr;
+    grid-template-columns: 1fr;
   }
   
   .hero h1 {
-      font-size: 2rem;
+    font-size: 2rem;
   }
 }
